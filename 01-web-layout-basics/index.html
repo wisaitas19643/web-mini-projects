@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<title>Web Layout Basics | First Web Lab</title>
+  <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+
+        .header {
+            background-color: #4ba1cc;
+            padding: 10px;
+        }
+
+        .container {
+            display: flex;
+            height: calc(100vh - 80px);
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #ccf2ff;
+            padding: 20px;
+        }
+
+        .main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .main ul {
+            text-align: left;
+        }
+
+        .table-box {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .table-box table {
+            margin: 0 auto; 
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px 10px;
+            text-align: left;
+        }
+
+        h1,
+        h3 {
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        footer {
+            background-color: #cceeff;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Web design Technology</h1>
+    </div>
+
+    <div class="container">
+
+       
+        <div class="sidebar">
+            <h3>Menu</h3>
+            Page1 <br>
+            Page2 <br>
+            Page3 <br>
+            Page4 <br><br>
+            Contact
+        </div>
+
+       
+        <div class="main">
+            <ul>
+                <li>Yourname</li>
+                <li>Student ID</li>
+                <li>section</li>
+            </ul>
+
+            <div class="table-box">
+                <h3>Point of Web Design</h3>
+                <table>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td>Ant</td>
+                        <td>Antant</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Bird</td>
+                        <td>Fly</td>
+                        <td>94</td>
+                    </tr>
+                    <tr>
+                        <td>Cat</td>
+                        <td>Meaw</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>D</td>
+                        <td>Doctor</td>
+                        <td>90</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="margin-top: 20px; text-align: left;">
+                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+                    alt="Google Logo" width="200">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Copyright (C) yourname:วิสัยทัศน์ อินทร์เพชร Id:643021435-8 section:2
+    </footer>
+
+</body>
+
+</html>
