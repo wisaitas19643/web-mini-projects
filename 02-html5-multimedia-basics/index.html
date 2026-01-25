@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        header {
+            background-color: rgb(13, 110, 70);
+            ;
+            color: aliceblue;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+
+        }
+
+        nav li {
+            margin-right: 10px;
+        }
+
+
+        article,
+        footer,
+        section {
+            background-color: white;
+            border: 1px solid black;
+            margin: 5px 5px 15px 0px;
+            padding: 8px;
+        }
+
+        footer {
+            background-color: rgb(13, 110, 70);
+            color: white;
+        }
+
+        section {
+            background-color: aquamarine;
+        }
+
+        .image-box {
+            display: flex;
+        }
+
+        .canvas-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 50px;
+        }
+
+        .canvas-container p {
+            margin: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Assignment#2</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Menu1</li>
+            <li>Menu2</li>
+            <li>Menu3</li>
+        </ul>
+    </nav>
+    <section>
+        <h2>HTML5</h2>
+        <article>
+            <h2>What is html5 (video)</h2>
+            <video src="video/video_for_ass2.mp4" controls></video>
+        </article>
+        <article>
+            <h2>Image</h2>
+            <div class="image-box">
+                <img src="image_for_ass2.png" alt=""  />
+
+
+                <div class="canvas-container">
+                    <p>Canvas</p>
+                    <canvas id="myCanvas" style="border: 1px solid;" width="200" height="75"></canvas>
+                </div>
+            </div>
+            <script>
+                var display = document.getElementById("myCanvas");
+                var ctx = display.getContext("2d");
+                ctx.fillStyle = "green";
+                ctx.fillRect(0, 0, 200, 75);
+            </script>
+        </article>
+
+    </section>
+    <footer>
+        <p>&copy; 2015 WDT. ALL rights reserved.</p>
+    </footer>
+</body>
+
+</html>
