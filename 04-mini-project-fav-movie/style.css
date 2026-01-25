@@ -1,0 +1,92 @@
+ body {
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+     background-attachment: fixed;
+     /* ทำให้พื้นหลัง fix ติดเต็มทั้งเพจ */
+     background-image: url("bg2.jpg");
+     background-repeat: no-repeat;
+     /* ไม่ให้รูปซ้ำ */
+     background-size: cover;
+     background-position: center;
+     color: white;
+     font-family: sans-serif;
+     margin: 0;
+     padding: 20px;
+ }
+
+ .head {
+     text-transform: uppercase;
+ }
+
+
+ .m {
+     display: flex;
+     background-color: #333;
+     margin-bottom: 20px;
+     /* เว้นระหว่างกล่อง */
+     padding: 20px;
+     border-radius: 10px;
+ }
+
+ .pos {
+     flex: 0 0 200px;
+     /* flex: flex-grow flex-shrink flex-basis
+flex-grow → ขยายได้มั้ย ถ้ามีพื้นที่เหลือ
+flex-shrink → หดได้มั้ย ถ้าพื้นที่ไม่พอ
+flex-basis → รูปกว้างคงที่ 200px */
+
+     margin-right: 20px;
+ }
+
+ .pos img {
+     width: 100%;
+     border-radius: 10px;
+     object-fit: cover;
+ }
+
+ .details {
+     flex: 1;
+     /* ขยายเต็มพื้นที่ที่เหลือ */
+
+ }
+
+ h2 {
+     color: #f5c518;
+ }
+
+ .btn {
+     background: none;
+     color: white;
+     padding: 5px 10px;
+     width: 80px;
+     border: white solid 1px;
+     font-size: 14px;
+     border-radius: 10px;
+     cursor: pointer;
+     /*เมื่อเอาเมาส์ไปชี้ที่ปุ่ม จะเปลี่ยนเป็นรูปลูกศรแบบ "มือคลิก"*/
+     transition: width 0.5s, height 0.5s;
+     float: right;
+ }
+
+ .btn:hover {
+     background: purple;
+     width: 100px;
+ }
+
+
+ footer {
+     color: white;
+     text-align: center;
+     padding: 12px;
+     font-size: 14px;
+     margin-top: auto;
+ }
+
+ .vdo {
+     text-align: center;
+ }
+
+ .vdo video {
+     width: 100%;
+ }
