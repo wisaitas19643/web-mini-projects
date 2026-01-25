@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="c1">
+        <h1>CSS font-size : A Definitive Font-Sizing Guide</h1>
+        <p>Font sizing in CSS sounds as though it should be easy. Until you try it. Many developers use the force; they
+            tinker with the CSS font-size property until it looks right only to find it’s different in another browser.
+            A little understanding can go a long way…</p>
+    </div>
+    <div class="c2">
+        <h2>The font-size Property</h2>
+        <p>The font-size property can be set for any HTML tag (even if it would not normally contain textual content
+            like br). It can be assigned a variety of absolute, relative, or length size parameters. An element will
+            inherit the font-size of its parent unless you override it. This is especially important when you specify
+            relative sizes.</p>
+    </div>
+    <div class="c3">
+        <h2>Absolute Font Sizing Keywords</h2>
+        <p>Several absolute font-sizing keywords are available. The font size is determined from a browser preset and
+            the element will not inherit its parent’s size.</p>
+        <ul>
+            <li id="fs1">font-size: xx-small;</li>
+            <li id="fs2">font-size: x-small;</li>
+            <li id="fs3">font-size: small;</li>
+            <li id="fs4">font-size: medium;</li>
+            <li id="fs5">font-size: large;</li>
+            <li id="fs6">font-size: x-large;</li>
+            <li id="fs7">font-size: xx-large;</li>
+        </ul>
+        <p>Although most browsers support these keywords, the exact sizes will differ. They are a fairly crude method of
+            font sizing and are generally avoided by most developers.</p>
+
+    </div>
+    <div>
+        <h2>Absolute Font Sizing Keywords</h2>
+        <p>Two relative font-sizing keywords are available. The font is sized according to its parent element:</p>
+        <ul>
+            <li id="fs8">font-size: smaller;</li>
+            <li id="fs9">font-size: larger;</li>
+        </ul>
+        <p><span class="c3sp">For example,</span> if the parent has a font size of ‘medium’, a value of ‘larger’ will
+            set the element
+            to ‘large’.
+            Other font units are normally altered by a factor of around 1.2 but, again, there is no standard and browser
+            results will differ.</p>
+    </div>
+    <div class="c4">
+        <h2>Absolute Lengths</h2>
+        <p>The font-size property can be assigned an absolute length:</p>
+        <ul>
+            <li><strong>mm</strong> : millimeters, e.g. 10mm.</li>
+            <li><strong>cm</strong> : centimeters, e.g. 1cm ( = 10mm).</li>
+            <li><strong>in</strong> : inches, e.g. 0.39in ( ~= 10mm).</li>
+            <li><strong>pt</strong> : point, where 1pt is generally assumed to be 1/72 inch e.g. 12pt.</li>
+            <li><strong>pc</strong> : pica, where 1pc is 12pt.</li>
+            <li><strong>px</strong> : pixel, e.g. 14px.</li>
+        </ul>
+        <p>In general, there are issues with all these measurement units. Millimeters, centimeters and inches are
+            inaccurate for a screen-based medium. Points and picas are unreliable since systems can use different dpi
+            settings. Pixel appears to be the most suitable, but it can lead to accessibility issues because the text
+            cannot be resized in IE.</p>
+    </div>
+    <div class="c5">
+        <h2>Relative Lengths</h2>
+        <p>The font-size property can be assigned a unit that it relative to its parent’s font size:</p>
+        <ul>
+            <li><strong>em</strong> 1em is equivalent to the current font size, so 2em is twice as large.</li>
+            <li><strong>%</strong> : 100% is equivalent to the current font size, so 200% is twice as large.</li>
+            <li><strong>ex</strong> : 1ex is equivalent to the height of the letter ‘x’ in the current font.</li>
+        </ul>
+        <p>Few developers use ‘ex’, but it can be useful in some situations where you need fine-grained font sizes, e.g.
+            1ex rather than 0.525em. Percentage and ’em’ sizes are equivalent, e.g. 50% = 0.5em, 100% = 1em, 120% =
+            1.2em, etc. Some browsers exhibit subtle differences but it’s rarely a major problem. If you want to save
+            every byte, you could choose the shortest definition, i.e. 50% is shorter than 0.5em and 1em is shorter than
+            100%.</p>
+        <br>
+        <a class="btn"
+            href="https://www.sitepoint.com/css-font-sizing-tutorial/#h-frequently-asked-questions-faqs-on-css-font-sizing"
+            target="_blank">เว็บไซต์ที่มา -></a>
+    </div>
+    <div class="c6">
+        <h2>20 Best Google Web Fonts</h2>
+        <p><span>Top recommended Google Web Fonts </span>Here you can find a selection of fontswe’ve chosen, in part due
+            to their aesthetic qualities, but above all, their functionality. As well as families with many styles and
+            weights,
+            you’ll find fonts that are optimized for interfaces, UI Optimized web fonts, and others that are especially
+            legible in paragraphs, or particularly comfortable for reading on mobile and legible on any device - be it
+            smartphone, desktop or tablet. To discover more examples of free fonts, take a look at our collection of
+            Free Fonts, containing a wide variety of free typefaces.</p>
+    </div>
+    <div class="imgf">
+        <h4>Sora - Google Font by Google Fonts</h4>
+        <img src="1.jpg" alt="1">
+    </div>
+    <div class="imgf">
+        <h4>Hahmlet - Google Font by Google Fonts</h4>
+        <img src="2.jpg" alt="2">
+
+    </div>
+    <div class="imgf">
+        <h4>JetBrains Mono - Google Font by Google Fonts</h4>
+        <img src="3.jpg" alt="3">
+    </div>
+    <div class="imgf">
+        <h4>Andada Pro - Google Font by Google Fonts</h4>
+        <img src="4.jpg" alt="4">
+        <br>
+        <br>
+        <br>
+        <a class="btn" href="https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html"
+            target="_blank">ฟ้อนต์เพิ่มเติม -></a>
+    </div>
+    <div class="c7">
+        <h4>Implementation</h4>
+        <p>It really is quick and simple:
+            1. Choose a font. You can add it to your collection or use “quick-use” to generate the code and options for
+            that font.
+            2. Copy and paste the code generated into your</p>
+        <br>
+        <div class="code">
+            <pre><code>   &lt;head&gt; &lt;link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine"&gt; &lt;/head&gt;
+</code></pre>
+        </div>
+        <br>
+        <p>3. The font is now accessible in your CSS code</p>
+        <br>
+        <div class="code">
+            <pre><code>   body { font-family: 'Tangerine', serif; font-size: 48px; }
+</code></pre>
+        </div>
+        <br>
+        <p><span>Embedding fonts using</span> the @font-face rule Fonts are hosted on the user’s server independently of
+            external
+            services. @font-face was a deprecated CSS2 rule that has been re-introduced in CSS3 specifications and is
+            supported by almost all modern browsers. A web font is a customized font which is supported by different
+            browsers and comes in formats such as TTF, WOFF, EOT and SVG.</p>
+        <br>
+        <div class="code">
+            <pre><code>   @font-face { font-family: 'ChunkFiveRegular'; src: url('Chunkfive-webfont.eot'); src: url('Chunkfive-webfont.eot?#iefix') format('embedded-opentype'), url('Chunkfive-webfont.woff') format('woff'), url('Chunkfive-webfont.ttf') format('truetype'), url('Chunkfive-webfont.svg#ChunkFiveRegular') format('svg'); font-weight: normal; font-style: normal; }
+</code></pre>
+        </div>
+        <br>
+        <p>เว็บไซต์ที่มา :
+            <a
+                href="https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html">https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html</a>
+        </p>
+    </div>
+    <footer>copyrigh © 2025 Wisaitas Inped CS Sec 2</footer>
+</body>
+
+</html>
