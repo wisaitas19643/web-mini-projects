@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab10</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            padding: 20px;
+            background-color: aqua;
+        }
+
+        nav {
+            padding: 10px;
+            background-color: green;
+        }
+
+        .content {
+            background-color: #cccc;
+            width: 50%;
+            height: 300px;
+        }
+
+        section {
+            display: flex;
+        }
+
+        .aside {
+            background-color: palevioletred;
+            width: 50%;
+            height: 300px;
+        }
+
+        footer {
+            background-color: blueviolet;
+            padding: 10px;
+        }
+
+        @media screen and (max-width: 376px) {
+            header {
+                padding: 20px;
+                background-color: aqua;
+
+            }
+
+            nav {
+                padding: 10px;
+                background-color: green;
+            }
+
+            section {
+                display: block;
+            }
+
+            .content {
+                background-color: #ffe600cc;
+                width: 100%;
+
+            }
+
+            .aside {
+                background-color: rgb(255, 0, 85);
+                width: 100%;
+            }
+
+            footer {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <nav>
+        <p>Nav</p>
+    </nav>
+    <section>
+        <article class="content">Content</article>
+        <article class="aside">Aside</article>
+    </section>
+    <footer>Footer</footer>
+</body>
+
+</html>

@@ -1,0 +1,406 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    height: 100%;
+    /* ให้สูงเต็มหน้าจอ */
+}
+
+body {
+    font-family: "Kanit", Arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    /* เรียงเป็นแนวตั้ง: header → main → footer */
+
+}
+
+
+header {
+    background-color: #075B5E;
+    padding: 10px;
+}
+
+.container-head {
+    display: flex;
+    margin: 0 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.main {
+    margin: 0 10%;
+    justify-items: center;
+    align-items: center;
+    flex: 1;
+}
+
+section.banner {
+    background-color: #FF3F33;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.font h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+
+}
+
+.font p {
+    margin-bottom: 40px;
+}
+
+.font a {
+    text-decoration: none;
+    background-color: #075B5E;
+    color: #FFE6E1;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: small;
+    transition: 0.1s;
+}
+
+.font a:hover {
+    background-color: #043d3f;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+article {
+    box-shadow: 0px 0px 15px lightgrey;
+    border-radius: 10px;
+    width: 30%;
+    padding: 2em;
+    margin-bottom: 5em;
+
+}
+
+article h4 {
+    color: rgb(108, 43, 194);
+    margin-bottom: 10px;
+}
+
+article p {
+    font-size: small;
+}
+
+footer {
+    background-color: #568F87;
+    text-align: center;
+    padding: 1em;
+    font-size: small;
+    color: white;
+
+}
+
+@media (min-width: 375px) and (max-width: 1200px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+    }
+
+    html,
+    body {
+        height: 100%;
+        /* ให้สูงเต็มหน้าจอ */
+    }
+
+    body {
+        font-family: "Kanit", Arial, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        display: flex;
+        flex-direction: column;
+        /* เรียงเป็นแนวตั้ง: header → main → footer */
+
+    }
+
+
+    header {
+        background-color: #075B5E;
+        padding: 10px;
+    }
+
+    .container-head {
+        display: flex;
+        margin: 0 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        color: white;
+
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+
+    }
+
+    .main {
+        margin: 0 1%;
+        justify-items: center;
+        align-items: center;
+        flex: 1;
+    }
+
+    section.banner {
+        background-color: #FF3F33;
+        width: 100%;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        margin: 20px 0;
+        border-radius: 10px;
+    }
+
+    .font h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+        letter-spacing: 10px;
+
+    }
+
+    .font p {
+        margin-bottom: 40px;
+    }
+
+    .font a {
+        text-decoration: none;
+        background-color: #075B5E;
+        color: #FFE6E1;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: small;
+        transition: 0.1s;
+    }
+
+    .font a:hover {
+        background-color: #043d3f;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    article {
+        box-shadow: 0px 0px 15px lightgrey;
+        border-radius: 10px;
+        width: 48%;
+        padding: 2em;
+        margin-bottom: 2em;
+
+    }
+
+    article h4 {
+        color: rgb(108, 43, 194);
+        margin-bottom: 10px;
+    }
+
+    article p {
+        font-size: small;
+    }
+
+    footer {
+        background-color: #568F87;
+        text-align: center;
+        padding: 1em;
+        font-size: small;
+        color: white;
+
+    }
+}
+
+@media (max-width:376px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+    }
+
+    html,
+    body {
+        height: 100%;
+        /* ให้สูงเต็มหน้าจอ */
+    }
+
+    body {
+        font-family: "Kanit", Arial, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        display: flex;
+        flex-direction: column;
+        /* เรียงเป็นแนวตั้ง: header → main → footer */
+
+    }
+
+
+    header {
+        background-color: #075B5E;
+        padding: 10px;
+    }
+
+    .container-head {
+        display: flex;
+        margin: 0 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        color: white;
+
+    }
+
+    nav ul {
+        list-style: none;
+        display: none;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+
+    }
+
+    .main {
+        margin: 0 5%;
+        justify-items: center;
+        align-items: center;
+        flex: 1;
+    }
+
+    section.banner {
+        background-color: #FF3F33;
+        width: 100%;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        margin: 20px 0;
+        border-radius: 10px;
+    }
+
+    .font h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+        letter-spacing: 3px;
+
+    }
+
+    .font p {
+        margin-bottom: 40px;
+    }
+
+    .font a {
+        text-decoration: none;
+        background-color: #075B5E;
+        color: #FFE6E1;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: small;
+        transition: 0.1s;
+    }
+
+    .font a:hover {
+        background-color: #043d3f;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+    }
+
+    article {
+        box-shadow: 0px 0px 15px lightgrey;
+        border-radius: 10px;
+        width: 100%;
+        padding: 2em;
+        margin-bottom: 2em;
+
+    }
+
+    article h4 {
+        color: rgb(108, 43, 194);
+        margin-bottom: 10px;
+    }
+
+    article p {
+        font-size: small;
+    }
+
+    footer {
+        background-color: #568F87;
+        text-align: center;
+        padding: 1em;
+        font-size: small;
+        color: white;
+
+    }
+
+}
