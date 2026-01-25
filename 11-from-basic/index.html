@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Assignment 12</title>
+    <link rel="stylesheet" href="ass.css" />
+</head>
+
+<body>
+
+    <main class="page">
+        <h1>Employment Application</h1>
+
+        <form class="card" action="#" method="post">
+            <section class="col">
+                <h2>ตำแหน่งที่ต้องการสมัคร</h2>
+
+                <div class="field">
+                    <p>Which position are you applying for? <span class="req">*</span></p>
+                    <input id="position" name="position" type="text" placeholder="เช่น Barista / Cashier / Cook"
+                        required>
+                </div>
+
+                <div class="field">
+                    <p>Are you willing to relocate? <span class="req">*</span></p>
+                    <div class="inline">
+                        <span><input type="radio" name="relocate" value="yes" required> Yes</span>
+                        <span><input type="radio" name="relocate" value="no"> No</span>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <p>When can you start? <span class="req">*</span></p>
+                    <input id="start" name="start" type="date" required>
+                </div>
+
+                <div class="field">
+                    <p>Portfolio / Web Site</p>
+                    <input id="portfolio" name="portfolio" type="url" placeholder="https://example.com">
+                </div>
+
+                <div class="field">
+                    <p>Attach a Copy of Your Resume (PDF)</p>
+                    <input id="resume" name="resume" type="file" accept=".pdf">
+                </div>
+            </section>
+
+            <section class="col">
+                <h2>ข้อมูลการติดต่อ (Your Contact Information)</h2>
+
+                <div class="field">
+                    <p>Name <span class="req">*</span></p>
+                    <div class="grid2">
+                        <input name="firstName" type="text" placeholder="first" required>
+                        <input name="lastName" type="text" placeholder="last" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <p>Email Address <span class="req">*</span></p>
+                    <input id="email" name="email" type="email" placeholder="you@email.com" required>
+                </div>
+
+                <div class="field">
+                    <p>Phone <span class="req">*</span></p>
+                    <div class="grid3">
+                        <input type="tel" placeholder="เช่น xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <button type="submit" class="btn-primary">submit</button>
+                    <button type="reset" class="btn-ghost">reset</button>
+                </div>
+            </section>
+        </form>
+    </main>
+
+</body>
+
+</html>

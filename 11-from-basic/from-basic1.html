@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAB 1</title>
+    <link rel="stylesheet" href="lab01.css">
+</head>
+
+<body>
+    <main class="page-wrapper">
+        <h2 class="lab-title">Design Form</h2>
+
+        <form class="card" action="#" method="post">
+            <div class="row">
+                <div class="field-name">Name:</div>
+                <input id="name" name="name" type="text" >
+            </div>
+
+            <div class="row">
+                <div class="field-name">Email Address:</div>
+                <input id="email" name="email" type="email" >
+            </div>
+
+            <div class="row">
+                <div class="field-name">Tel:</div>
+                <input type="tel" placeholder="เช่น xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </div>
+
+            <div class="row">
+                <div class="field-name">Feedback:</div>
+                <textarea id="feedback" name="feedback" rows="7"
+                    placeholder="&lt;textarea&gt;&lt;/textarea&gt;"></textarea>
+            </div>
+
+            <div class="row">
+                <div class="field-name">Sex:</div>
+                <div class="inline-group">
+                    <div class="inline">
+                        <input type="radio" name="sex" value="male" id="sex-m">
+                        <span>Male:</span>
+                    </div>
+                    <div class="inline">
+                        <input type="radio" name="sex" value="female" id="sex-f">
+                        <span>Female:</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="field-name">Hobbies:</div>
+                <div class="inline-group">
+                    <div class="inline">
+                        <input type="checkbox" name="hobbies" value="tennis" id="hb-tennis">
+                        <span>Tennis</span>
+                    </div>
+                    <div class="inline">
+                        <input type="checkbox" name="hobbies" value="reading" id="hb-reading">
+                        <span>Reading</span>
+                    </div>
+                    <div class="inline">
+                        <input type="checkbox" name="hobbies" value="basketball" id="hb-basketball">
+                        <span>Basketball</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="field-name">Agree to Terms?</div>
+                <div class="inline-group">
+                    <div class="inline">
+                        <input type="checkbox" name="agree" id="agree" >
+                    </div>
+                </div>
+            </div>
+
+            <div class="row buttons">
+                <button type="submit" class="btn">Submit</button>
+                <button type="reset" class="btn btn-ghost">Reset</button>
+
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>
