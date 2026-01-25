@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab6</title>
+    <style>
+        .top {
+            border-bottom: solid 10px;
+            /* สร้างเส้นขอบด้านล่างความหนา 10px แบบเส้นทึบ */
+            border-color: green;
+            /* กำหนดสีของเส้นขอบให้เป็นสีเขียว */
+            background-color: rgb(74, 255, 156);
+            /* กำหนดสีพื้นหลังเป็นสีเขียวอ่อนแบบ RGB */
+        }
+
+
+        .p1 {
+            border: ridge red 8px;
+            /* สร้างเส้นขอบรอบๆ แบบ ridge (นูนสองชั้น) สีแดง ความหนา 8px */
+        }
+
+
+        .p2 {
+            border-top: double 10px blue;
+            /* เส้นขอบด้านบนแบบเส้นคู่ ความหนา 10px สีฟ้า */
+            border-bottom: dotted 10px RGB(255, 136, 0);
+            /* เส้นขอบด้านล่างแบบจุด ความหนา 10px สีส้ม */
+            border-left: ridge RGB(1, 150, 68) 8px;
+            /* เส้นขอบด้านซ้ายแบบ ridge ความหนา 8px สีเขียวเข้ม */
+        }
+
+
+        .p3 {
+            background-color: RGB(127, 150, 255);
+            /* สีพื้นหลังฟ้าอมม่วงแบบ RGB */
+            margin: 10%;
+            /* ระยะห่างรอบกล่อง 10% ของขนาดหน้าจอ */
+            padding: 10px;
+            /* ระยะห่างเนื้อหาด้านในกล่อง 10px */
+            text-align: center;
+            /* จัดข้อความให้อยู่กึ่งกลางแนวนอน */
+        }
+
+
+        .p4 {
+            background-color: yellow;
+            /* สีพื้นหลังเหลือง */
+            border: solid red;
+            /* เส้นขอบรอบกล่องแบบทึบ สีแดง ความหนา default (medium) */
+            margin-left: 30%;
+            /* ระยะห่างด้านซ้าย 30% ของหน้าจอ */
+            margin-right: 30%;
+            /* ระยะห่างด้านขวา 30% ของหน้าจอ */
+            text-align: center;
+            /* จัดข้อความให้อยู่กึ่งกลางแนวนอน */
+        }
+
+
+        .main {
+            color: black;
+            /* สีตัวอักษรเป็นสีดำ */
+            text-align: center;
+            /* จัดข้อความอยู่กึ่งกลางแนวนอน */
+            width: 500px;
+            /* ความกว้างของกล่อง 500px */
+            height: 200px;
+            /* ความสูงของกล่อง 200px */
+            margin-top: 10%;
+            /* ระยะห่างด้านบน 10% ของหน้าจอ */
+            margin-bottom: 10%;
+            /* ระยะห่างด้านล่าง 10% ของหน้าจอ */
+            margin-left: auto;
+            /* จัดกึ่งกลางแนวนอนโดยให้ margin ซ้ายเป็น auto */
+            margin-right: auto;
+            /* จัดกึ่งกลางแนวนอนโดยให้ margin ขวาเป็น auto */
+            outline: 10px ridge RGB(255, 136, 0);
+            /* เส้นกรอบนอก (outline) แบบ ridge ความหนา 10px สีส้ม */
+            outline-offset: 20px;
+            /* ระยะห่างระหว่าง outline กับขอบกล่อง 20px */
+            border-top: 10px dashed black;
+            /* เส้นขอบบนแบบเส้นประ ความหนา 10px สีดำ */
+            border-left: RGB(1, 150, 68) ridge 8px;
+            /* เส้นขอบซ้ายแบบ ridge ความหนา 8px สีเขียวเข้ม */
+            border-bottom: RGB(255, 136, 0) dotted 10px;
+            /* เส้นขอบล่างแบบจุด ความหนา 10px สีส้ม */
+            border-right: blue double 10px;
+            /* เส้นขอบขวาแบบเส้นคู่ ความหนา 10px สีน้ำเงิน */
+            border-radius: 10px;
+            /* ทำมุมของกล่องโค้งมนรัศมี 10px */
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="top">THIS IS A HEADING</h1>
+    <p class="p1">THIS IS A PARAGRAPH.</p>
+    <p class="p2">THIS IS A PARAGRAPH.</p>
+    <h1 class="p3">THIS IS A HEADING</h1>
+    <p class="p4">THIS IS A PARAGRAPH</p>
+    <div class="main">
+        <h1>HELLO WORLD!</h1>
+    </div>
+</body>
+
+</html>

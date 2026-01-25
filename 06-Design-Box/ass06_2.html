@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment6_2</title>
+    <style>
+        .border {
+            display: inline-block;
+            /* ทำให้ element เป็น inline-block คืออยู่ในบรรทัดเดียวกับ element อื่นได้ แต่ยังสามารถกำหนด width/height ได้ */
+            border: 20px solid;
+            /* กำหนดขอบของกล่อง (border) หนา 20px และเป็น solid แต่ยังไม่กำหนดสี เพราะสีจะใช้จาก border-image */
+            border-image: url('border.png') 50 round;
+            /* ใช้รูป 'border.png' มาเป็นลวดลายของ border โดย slice 50px และให้เรียงซ้ำแบบ round */
+            outline: orange 10px ridge;
+            /* กำหนดเส้นขอบนอกอีกชั้นหนึ่ง (outline) สีส้ม หนา 10px และเป็นสไตล์ ridge (นูน/ร่อง) */
+            outline-offset: 10px;
+            /* กำหนดระยะห่างระหว่าง outline กับขอบของ element 10px */
+            margin-top: 10%;
+            /* เว้นระยะด้านบนของกล่อง 10% ของความสูง container */
+            margin-bottom: 10%;
+            /* เว้นระยะด้านล่างของกล่อง 10% ของความสูง container */
+            margin-left: auto;
+            /* ทำให้กล่องอยู่กึ่งกลางแนวนอน */
+            margin-right: auto;
+            /* ทำให้กล่องอยู่กึ่งกลางแนวนอน */
+        }
+
+        .border img {
+            width: 100%;
+            /* ภาพขยายเต็มความกว้างของ container */
+            height: 100%;
+            /* ภาพขยายเต็มความสูงของ container */
+            object-fit: cover;
+            /* ภาพจะครอบเต็มกล่องโดยอาจตัดบางส่วนออก แต่ไม่บิดสัดส่วน */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="border">
+        <img src="meme.jpg" alt="meme">
+    </div>
+</body>
+
+</html>

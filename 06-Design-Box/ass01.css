@@ -1,0 +1,19 @@
+div {
+    margin: 10px;
+    padding: 10px;
+    width: 180px;
+    float: left;
+    /*ทำให้<div>แต่ละกล่องลอยไปทางซ้ายแล้วตัวถัดไปจะมาต่อข้างกัน*/
+}
+
+.d1 {
+    border: RGB(255, 86, 86) 10px solid;
+}
+
+.d2 {
+    border: red 10px inset;
+}
+
+.d3 {
+    border: blueviolet 10px double;
+}
