@@ -8,6 +8,6 @@
 - HTML5
 - CSS3
 - Bootstrap
-- 
+
 ## Author
 Wisaitas Inped (Computer Science)
