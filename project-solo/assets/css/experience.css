@@ -1,0 +1,126 @@
+:root {
+    --bg: #BBE2EC;
+    /* ให้โทนไปในไลน์เดียวกับหน้า Home ของโปรเจกต์คาเฟ่ */
+    --card: #FFF;
+    --ink: #222;
+    --muted: #666;
+    --shadow: 0 3px 10px rgba(0, 0, 0, .08);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Noto Sans Thai", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+    color: var(--ink);
+    background: #fff;
+}
+
+/* HERO */
+.xp-hero {
+    background-image: url(/assets/img/bg-about.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    border-bottom: 1px solid #f0e8d8;
+}
+
+.xp-hero-inner {
+    width: 92%;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.xp-hero h1 {
+    margin: 0 0 6px 0;
+    font-weight: 700;
+    letter-spacing: .5px;
+    color: #fff;
+}
+
+.xp-hero p {
+    margin: 0;
+    color: #f0f0f0;
+}
+
+/* SECTION */
+.xp-section {
+    width: 92%;
+    max-width: 1100px;
+    margin: 28px auto 38px;
+    background: var(--card);
+    padding: 24px 20px;
+}
+
+.xp-section h2 {
+    margin: 0 0 12px 0;
+    font-size: 20px;
+}
+
+/* GRID */
+.xp-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.xp-grid.two {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.xp-card {
+    background: #fff;
+    padding: 16px;
+}
+
+.xp-card h3 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+}
+
+/* LIST */
+.xp-list {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.xp-list li {
+    margin: 6px 0;
+    line-height: 1.6;
+}
+
+
+/* TIMELINE (เรียบๆ) */
+.xp-timeline {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.xp-timeline li {
+    margin: 6px 0;
+}
+
+.xp-timeline span {
+    display: inline-block;
+    min-width: 130px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .xp-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .xp-grid.two {
+        grid-template-columns: 1fr;
+    }
+
+    .xp-section {
+        padding: 18px 14px;
+    }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact — Wisaitas Inped</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- If there's a shared header.css for the site -->
+    <link rel="stylesheet" href="/assets/css/head.css">
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="/assets/css/contact.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true">
+        <label for="menu-toggle" class="hamburger" aria-label="Open mobile menu">☰</label>
+
+        <nav class="mobile-panel" aria-label="Mobile Navigation">
+            <ul class="mobile-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="project.html" class="nav-link">Project</a></li>
+                <li><a href="Experience.html" class="nav-link">Experience</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a class="nav-link" href="/assets/files/resume.pdf" download>Download CV</a></li>
+                <li><a class="lang-switch w-100" href="contact-th.html">TH</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-wrap">
+            <nav class="nav-left">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a href="project.html" class="nav-link">Project</a></li>
+                    <li class="nav-item"><a href="Experience.html" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+
+            <nav class="nav-right">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a class="nav-link drop1-btn" href="/assets/files/resume.pdf" download>Download CV</a></li>
+                    <li class="nav-item"><a class="lang-switch w-100" href="contact-th.html">TH</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="ct-main">
+        <!-- HERO -->
+        <section class="ct-hero">
+            <div class="ct-hero-inner">
+                <h1>Contact Me</h1>
+                <p>For work, questions, or collaboration opportunities — feel free to get in touch.</p>
+            </div>
+        </section>
+
+        <!-- INFO + MAP -->
+        <section class="ct-info-wrap">
+            <div class="ct-info">
+                <div class="ct-card">
+                    <h3>Contact Information</h3>
+                    <ul class="ct-list">
+                        <li><strong>Email:</strong> wisaitas.i@kkumail.com</li>
+                        <li><strong>Phone:</strong> 095-212-3939</li>
+                        <li><strong>Available:</strong> 10:00–18:00</li>
+                        <li><strong>Location:</strong> Khon Kaen, Thailand</li>
+                    </ul>
+                    <div class="ct-social">
+                        <a href="#" aria-label="GitHub">GitHub</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" aria-label="Behance">Behance</a>
+                    </div>
+                </div>
+
+                <div class="ct-map">
+                    <iframe title="Google Map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7777.7777!2d102.835!3d16.441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31228b0aaaaaaaa%3AKKU!2sKhon%20Kaen!5e0!3m2!1sth!2sth!4v1710000000000"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORM -->
+        <section class="ct-form-wrap">
+            <h2>Send Me a Message</h2>
+            <form class="ct-form" action="#" method="post">
+                <div class="grid-2">
+                    <div class="field">
+                        <label for="name">Full name</label>
+                        <input id="name" name="name" type="text" placeholder="Your full name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="you@email.com" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="subject">Subject</label>
+                    <input id="subject" name="subject" type="text" placeholder="e.g. Quote request / Meeting" required>
+                </div>
+
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6"
+                        placeholder="Briefly describe your project or request" required></textarea>
+                </div>
+
+                <div class="actions">
+                    <button type="submit" class="btn-primary">Send Message</button>
+                    <button type="reset" class="btn-ghost">Reset Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="ft-bottom">
+            <p>© 2025 Wisaitas Inped Khon Kaen University</p>
+        </div>
+    </footer>
+</body>
+
+</html>

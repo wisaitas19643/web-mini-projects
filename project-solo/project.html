@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Projects — Wisaitas Inped</title>
+
+    <!-- ฟอนต์และไฟล์ส่วนหัว/โทนเดียวกับหน้า Home -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- ถ้ามี head.css ของโปรเจ็กต์รวม เมนู/ส่วนหัว ให้ใส่ด้วย -->
+    <link rel="stylesheet" href="/assets/css/head.css">
+    <!-- CSS เฉพาะหน้านี้ -->
+    <link rel="stylesheet" href="/assets/css/project.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true">
+        <label for="menu-toggle" class="hamburger" aria-label="Open mobile menu">☰</label>
+
+        <nav class="mobile-panel" aria-label="Mobile Navigation">
+            <ul class="mobile-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="project.html" class="nav-link">Project</a></li>
+                <li><a href="Experience.html" class="nav-link">Experience</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a class="nav-link" href="/assets/files/resume.pdf" download>Download CV</a></li>
+                <li><a class="lang-switch w-100" href="project-th.html">TH</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-wrap">
+            <nav class="nav-left">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a href="project.html" class="nav-link active">Project</a></li>
+                    <li class="nav-item"><a href="Experience.html" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <nav class="nav-right">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a class="nav-link" href="/assets/files/resume.pdf" download>Download CV</a></li>
+                    <li class="nav-item"><a class="lang-switch w-100" href="project-th.html">TH</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pj-main">
+        <!-- HERO เด่นสุด: No Bones Day (Full-width Banner + Overlay) -->
+        <section class="pj-hero">
+            <figure class="pj-hero-card">
+                <img src="/assets/img/no-bones-day.png" alt="No Bones Day Café — Featured Project">
+                <figcaption class="pj-hero-caption">
+                    <h1>No Bones Day Café</h1>
+                    <p>Responsive multi-page café website (Home, Menu, Promotions, Rewards, etc.)</p>
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- GRID: Assignments (6 งาน) — โชว์รูปเท่านั้น -->
+        <section class="pj-section">
+            <h2 class="pj-title">Assignments</h2>
+            <div class="pj-grid">
+                <figure class="pj-card">
+                    <img src="/assets/img/a1.png" alt="Assignment 1">
+                </figure>
+                <figure class="pj-card">
+                    <img src="/assets/img/a2.png" alt="Assignment 2">
+                </figure>
+                <figure class="pj-card">
+                    <img src="/assets/img/a3.png" alt="Assignment 3">
+                </figure>
+                <figure class="pj-card">
+                    <img src="/assets/img/a4.png" alt="Assignment 4">
+                </figure>
+                <figure class="pj-card">
+                    <img src="/assets/img/a5.png" alt="Assignment 5">
+                </figure>
+                <figure class="pj-card">
+                    <img src="/assets/img/a6.png" alt="Assignment 6">
+                </figure>
+            </div>
+        </section>
+
+        <!-- GRID: Labs (6 งาน) — โชว์รูปเท่านั้น -->
+        <section class="pj-section">
+            <h2 class="pj-title">Labs</h2>
+            <div class="pj-grid">
+                <figure class="pj-card">
+                    <img src="/assets/img/lab1.png" alt="Lab 1">
+                </figure>
+                <figure class="pj-card">
+                    <img src="/assets/img/lab2.png" alt="Lab 2">
+                </figure>
+                <figure class="pj-card">
+                    <img src="/assets/img/lab3.png" alt="Lab 3">
+                </figure>
+                <figure class="pj-card">
+                    <img src="/assets/img/lab4.png" alt="Lab 4">
+                </figure>
+                <figure class="pj-card">
+                    <img src="/assets/img/lab5.png" alt="Lab 5">
+                </figure>
+                <figure class="pj-card">
+                    <img src="/assets/img/lab6.png" alt="Lab 6">
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="ft-bottom">
+            <p>© 2025 Wisaitas Inped Khon Kaen University</p>
+        </div>
+    </footer>
+</body>
+
+</html>
